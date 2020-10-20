@@ -1,0 +1,19 @@
+import { Component, OnInit } from '@angular/core';
+import { EmployeeDbService } from '../employee-db.service';
+
+@Component({
+  selector: 'app-view-employee',
+  templateUrl: './view-employee.component.html',
+  styleUrls: ['./view-employee.component.css']
+})
+export class ViewEmployeeComponent implements OnInit {
+
+  constructor(private empDbService: EmployeeDbService) { }
+
+  ngOnInit(): void {
+  }
+
+  getEmployees() {
+    return this.empDbService.getEmployees();
+  }
+}

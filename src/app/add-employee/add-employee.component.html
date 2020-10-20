@@ -1,0 +1,10 @@
+<div>
+  <form>
+    Employee ID <input class="form-control" type="text" name="id" [(ngModel)]="empId" /> <br/>
+    Employee Name <input class="form-control" type="text" name="name" [(ngModel)]="empName" /> <br/>
+    Employee Department <input class="form-control" type="text" name="dept" [(ngModel)]="empDept" /> <br/>
+    Employee Salary <input class="form-control" type="number" min="0" name="salary" [(ngModel)]="empSalary" /> <br/>
+  </form>
+
+  <button type="button" class="btn btn-primary" (click)="addEmployee()">Add Employee #{{ empId }}</button>
+</div>

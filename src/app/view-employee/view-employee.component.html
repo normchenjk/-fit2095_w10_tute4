@@ -1,0 +1,20 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Row #</th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Department</th>
+      <th>Salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of getEmployees(); let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ emp.id }}</td>
+      <td>{{ emp.name }}</td>
+      <td>{{ emp.dept }}</td>
+      <td>{{ emp.salary }}</td>
+    </tr>
+  </tbody>
+</table>
